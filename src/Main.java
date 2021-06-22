@@ -1,33 +1,28 @@
+import java.util.Locale;
 
 public class Main {
 
 	public static void main(String[] args) {
-		// Apenas um teste!
 
+		String nome = "Tchelo";
+		int idade = 33;
+		double salario = 5000.0;
 		
-		int a, b, c, soma;
+		System.out.printf(" %s tem de idade %d e recebe ao mês o valor de %.2f%n ", nome, idade, salario);
 		
-		a = 10;
-		b = 10;
-		c = 50;
+ // Vamos formatar para a condição com ponto//
 		
-		soma = a * b / c;
+		Locale.setDefault(Locale.US);
 		
-		System.out.println("o Valor da conta é = " + soma);
+		System.out.printf("%s tem de idade %d e recebe ao mês o valor de %.2f%n ", nome, idade, salario);
 		
-		if (a < b) {
-			System.out.println("o valor de a é maior que b");
+		if (salario > idade) { 
+			System.out.println("O valor do salário é bom ");
 		}
 		
-		if (a > b) {
-			System.out.println("O valor de b é maior que a");
-		}
- 
 		else {
-			System.out.println("O valor de c é maior que a e b ");
+			System.out.println("O valor do salário é ruim");
 		}
-	
 
 	}
-
 }
