@@ -4,48 +4,57 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		String  nome =  "Tchelo";
-		int idade = 15;
+		// Sexta-Feira Treino simples//
+
+		String nome = "Tchelo";
+		int idade = 33;
 		double altura = 1.74;
-		double salario = 5000.0;
-		
-		System.out.printf("%s tem de idade %d e de altura %.2f recebe o valor de R$ %.2f %n", nome, idade, altura, salario);
-		
+		double renda = 5000.0;
+
+		System.out.printf("%s tem de idade %d e altura %.2f recebe o valor ao mês %.2f %n", nome, idade, altura, renda);
+
+		// Faltou colocar a altura //
+
 		Locale.setDefault(Locale.US);
+
+		System.out.printf("%s tem de idade %d e altura %.2f recebe o valor ao mês %.2f %n", nome, idade, altura, renda);
+
+		if (idade < altura) {
+			System.out.println("A idade é maior que a altura ");
+		} else {
+			System.out.println("A altura e maior que a idade ");
+		}
+
+		int i = 0;
+		while (i < 5) {
+			System.out.println(i);
+			i = i + 1;
+		}
+
+		int a, b;
+		a = 5;
+		b = 5;
+		System.out.println("O valor da conta é " + (a + b));
+
+		// montando outra conta //
+
+		int c, d, e, soma;
+
+		c = 5;
+		d = 5;
+		e = 5;
+
+		soma = a + b + c;
+
+		System.out.println("O valor da conta é " + soma);
+
+		int idade1 = 17;
 		
-		System.out.printf("%s tem de idade %d e de altura %.2f recebe o valor de R$ %.2f %n", nome, idade, altura, salario);
-		
-		if (idade < 18) {
+		while (idade1 < 18) {
 			System.out.println("Não pode entrar");
-		}
-		
-		else {
 			
-			System.out.println("Pode entrar");
-		}
-		
-		while (idade < 18) {
-			System.out.println (idade);
-			idade = idade + 1;
-		}
-		
-		int a, b, c, soma;
-		
-		a = 10;
-		b = 20;
-		c = 30;
-		
-		soma = a * b / c;
-		
-		System.out.println("O valor da soma é = " + soma);
-		
-		while (a < b) {
-			System.out.println(a);
-			a = a + 0;
-		}
-		
-		
-		
+			idade1 = idade1 + 1;
 		}
 	}
 
+}
